@@ -27,7 +27,7 @@
         See System.Diagnostics.ProcessStartInfo.  Defaults to $false
 
     .PARAMETER Raw
-        If specified, return an object with the command, output, and error properties.
+        If specified, return an object with the command, output, error, and exit code properties.
 
         Without Raw or Quiet, we return output if there's output, and we write an error if there are errors
 
@@ -136,6 +136,7 @@
                 Command = $Command
                 Output = $stdout
                 Error = $stderr
+                ExitCode = $p.ExitCode
             }
         }
         else
