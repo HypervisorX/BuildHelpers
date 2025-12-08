@@ -66,6 +66,7 @@
         $RedirectStandardError = $true,
         $RedirectStandardOutput = $true,
         $UseShellExecute = $false,
+        [ValidateNotNullOrEmpty()]
         $Path = $PWD.Path,
         $Quiet,
         $Split = "`n",
